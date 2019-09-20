@@ -1,0 +1,269 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Investimento Esportivo</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      outline: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      font-size: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Open Sans', sans-serif;
+    }   
+    .top-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 25px 20px 25px;
+      font-size: 0.8rem;
+      background: url(./img/clube-top.png);
+      background-color:#17807F;
+      width: 100vw;
+    }
+    .top-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+    }
+    .top-container strong {
+      font-size: 1.2rem;
+      font-weight: 800 !important;
+      text-align: center;
+      padding: 0 0 20px 0;
+      color: rgb(255, 255, 20);
+    }
+    .top-container p {
+      text-align: justify;
+      margin: 0 0 10px 0;
+      max-width: 600px;
+      color: rgb(248, 248, 248);
+    }
+    .top-container p .bold {
+      font-weight: bold;
+      text-align: center;
+    }
+    .top-cta {
+      color: #ffffff;
+      background: rgb(255, 0, 0);
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 0.5rem 0.8rem 0.5rem; 
+      border-radius: 1.5rem;
+      margin: 10px 0 10px 0;
+      cursor: pointer;
+      white-space: nowrap;
+      max-width: 500px;
+    }
+
+    .middle-cta {
+      color: #ffffff;
+      background: rgb(255, 0, 0);
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 0.5rem 0.8rem 0.5rem; 
+      border-radius: 1.5rem;
+      margin: 10px 0 10px 0;
+      cursor: pointer;
+      white-space: nowrap;
+      max-width: 500px;
+    }
+
+    .bottom-cta {
+      color: #ffffff;
+      background: rgb(255, 0, 0);
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 0.5rem 0.8rem 0.5rem; 
+      border-radius: 1.5rem;
+      margin: 10px 0 10px 0;
+      cursor: pointer;
+      white-space: nowrap;
+      max-width: 500px;
+    }
+
+    .middle-container {
+      background: rgb(68, 112, 35);
+      padding: 20px 20px 20px 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .middle-header {
+      background: rgb(248, 248, 248);
+      padding: 20px 20px 20px 20px;
+      width: 100%;
+      text-align: center;
+    }
+    .middle-header strong {
+      font-size: 1rem;
+      font-weight: 800;
+      color: rgb(29, 29, 29);
+    }
+    
+    .middle-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .middle-content img {
+      width: 100px;
+      height: 100px;
+      padding: 0 0 10px 0;
+    }
+    
+    .middle-content strong {
+      font-size: 1.2rem;
+      font-weight: 800;
+      text-align: center;
+      margin: 0 0 5px 0;
+      color: rgb(231, 231, 231);
+      max-width: 800px;
+    }
+    .middle-content p {
+      margin: 0 0 10px 0; /* /\ > \/ < */
+      max-width: 800px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      text-align: justify;
+      color: rgb(31, 31, 31);
+    }
+    .bottom-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 25px 20px 25px;
+      font-size: 0.8rem;
+      /* background: url(./img/clube-top.png); */
+      background-color:rgb(248,248,248);
+      width: 100vw;
+    }
+
+    .bottom-container img {
+      width: 200px;
+      height:200px;
+      border-radius: 100px;
+    }
+    .bottom-container strong {
+      font-size: 1.2rem;
+      font-weight: 800 !important;
+      text-align: center;
+      padding: 0 0 10px 0;
+      color: rgb(29, 29, 29);
+    }
+    .bottom-container p {
+      text-align: justify;
+      max-width: 800px;
+      padding: 0 0 10px 0;
+    }
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 25px 20px 25px;
+      font-size: 0.8rem;
+      /* background: url(./img/clube-top.png); */
+      background-color:rgb(248,248,248);
+      width: 100vw;
+    }
+    .footer-container p {
+      text-align: justify;
+      font-size: 0.6rem;
+      max-width: 600px;
+      padding: 0 0 10px 0;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <section class="top-container">   
+        <img src="./img/top-vector.png" alt="Homem usando um notebook">
+        <strong>Quer ser um investidor esportivo?</strong>
+        <p>
+          Já imaginou você <span class="bold">recebendo altos rendimentos investindo em partidas de futebol, basquete, tênis?</span>  
+          Mais de 4 milhões de torcedores no mundo já descobriram uma forma interessante de aumentar seus ganhos e patrimônio.
+          <span class="bold">Vou te ensinar do básico ao avançado - estratégias testadas e aprovadas!</span>
+        </p>  
+        <a class="top-cta">SEJA UM TRADER</a>
+    </section>
+  </header>
+  
+  <div class="middle-header">
+      <strong>Método Lucrativo e Simples de Aplicar.</strong>
+  </div>
+  
+  <section class="middle-container">
+      <div class="middle-content">
+        <img src="/img/middle-icon1.png" alt="Troféu com dinheiro">
+        <strong>O QUE É UM INVESTIDOR ESPORTIVO? </strong>
+        <p>
+            É a pessoa que desenvolve a prática de investir em resultados de eventos esportivos, antes ou durante o decorrer dos jogos. Alguns usam termos como: Trading Esportivo, Puntrading, Punter, Trader e etc... eu prefiro a terminologia Investidor Esportivo, porque faz mais sentido pela estrategia e método que aplico em minhas operações no mercado.
+        </p>
+      </div>
+
+      <div class="middle-content">
+          <img src="/img/middle-icon2.png" alt="Gráfico de moedas">
+          <strong>O QUE FAZ UM INVESTIDOR ESPORTIVO?</strong>
+          <p>
+            Geralmente, quem acessa as bolsas esportivas optam por escolher um resultado baseado em um chute ou preferência e investe certa quantia de dinheiro nisso, contando com a sorte como fator decisivo. Já o trabalho de um Investidor Esportivo consiste em realizar um estudo de probabilidade dos times, distribuir os investimentos em diversos canais para, no fim, o valor investido retornar para você, seja qual for o resultado do jogo.
+          </p>
+        </div>
+
+        <div class="middle-content">
+            <img src="/img/middle-icon3.png" alt="3 mãos levantadas">  
+          <strong>POR QUE NUNCA OUVI FALAR DE INVESTIDOR ESPORTIVO?</strong>
+            <p>
+              A Bolsa Esportiva mundial ainda é pouco conhecida no Brasil, mas já vem se consolidando por aqui. Porém, menos conhecida ainda são as estrategias desenvolvidas e aperfeiçoadas pelo DecoTrader, que permite com que você atue na Bolsa Esportiva de forma certeira. O trading esportivo permite que essa prática deixe de ser um chute e passe a ser mais próximo a um investimento na bolsa de valores.
+            </p>
+        </div>
+        <a class="middle-cta">SEJA UM TRADER</a>
+  </section>
+  
+  <section class="bottom-container">
+      <img src="./img/decotrader.png" alt="Homem pulando abrindo os braços e as pernas">
+      <strong> Quem é DecoTrader? </strong>
+      <p>
+        Além de trabalhar profissionalmente a mais de 6 anos como Trading Esportivo, tenho alguns outros empreendimentos online. Sou fascinado com a capacidade que a internet tem de potencializar e criar múltiplas fontes de rendas e trabalhar como Trader é uma delas. 
+      </p>
+      <a class="bottom-cta">SEJA UM TRADER</a>
+  </section>
+
+  <footer class="footer-container">
+     <p>Copyright 2015 - Trader Esportivo - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- 
+  
+    Vector Credits
+
+  https://www.freepik.com/free-photos-vectors/businessBusiness 
+  vector created by macrovector_official - www.freepik.com 
+
+-->
+</body>
+</html>
+
